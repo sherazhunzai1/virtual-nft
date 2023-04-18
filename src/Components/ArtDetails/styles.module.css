@@ -1,0 +1,62 @@
+.shareUser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subMenuOuterContainer {
+  width: 100%;
+  padding-bottom: 38px;
+}
+
+.subMenuContaienr {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.toBottomLink {
+  text-decoration: none;
+  display: flex;
+  justify-self: flex-start;
+  align-items: baseline;
+}
+.toBottomLink {
+  color: #808080;
+  transition: color 300ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+.toBottomLink:hover {
+  color: #000;
+}
+.inlineBlock {
+  display: inline-block;
+}
+
+.linkIcon {
+  position: relative;
+  top: 5px;
+}
+
+.mTop10 {
+  margin-top: 10px;
+}
+.historyMargin {
+  padding: 25px 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .historyMargin {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .mTop10 {
+    display: none;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+}

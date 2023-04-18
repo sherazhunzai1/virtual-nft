@@ -1,0 +1,49 @@
+.paddingAround {
+  text-align: left;
+  margin-left: 30px;
+}
+.subHeadingPaddings {
+  padding-bottom: 15px;
+
+  font-family: "lato", sans-serif !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+.item .dhsm {
+  font-family: "lato", sans-serif !important;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+}
+
+.auctionTitle {
+  font-size: 24px !important;
+  font-family: "lato", sans-serif !important;
+}
+
+@media (max-width: 960px) {
+  .paddingAround {
+    text-align: left;
+    padding: 0 25px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .subHeadingPaddings {
+    font-size: 18px !important;
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .paddingAround {
+    text-align: center;
+    justify-content: center;
+  }
+  .subHeadingPaddings {
+    text-align: center;
+  }
+  .item {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
