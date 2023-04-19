@@ -4,6 +4,7 @@ import {
   Checkbox,
   CircularProgress,
   IconButton,
+  InputAdornment,
 } from "@material-ui/core";
 import RegisterInput from "../InputField/Register";
 import PrimaryButton from "../Buttons/PrimaryButton";
@@ -14,6 +15,7 @@ import * as yup from "yup";
 import { useFormik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { postSignup, getLoggedIn } from "../../Redux/Actions/auth.actions";
+import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
 import {
   checkEmailOnApi,
   checkUsernameOnApi,
@@ -123,6 +125,31 @@ export const SignUpForm = ({ handleBack }) => {
     success: isPostingSignUpSuccess && !isPostingSignUpFailed,
     error: !isPostingSignUpSuccess && isPostingSignUpFailed,
   });
+
+  const getWalletAddress = () => {
+    // Check if Metamask is installed
+    if (typeof window.ethereum !== "undefined") {
+      console.log("Metamask is installed!");
+
+      // Get the user's wallet address
+      window.ethereum
+        .request({ method: "eth_accounts" })
+        .then((accounts) => {
+          if (accounts.length > 0) {
+            const walletAddress = accounts[0];
+
+            formik.setFieldValue("walletAddress", walletAddress);
+          } else {
+            console.log("No accounts found");
+          }
+        })
+        .catch((error) => {
+          console.error("Failed to get accounts:", error);
+        });
+    } else {
+      console.log("Metamask is not installed");
+    }
+  };
   return (
     <>
       <div className={classes.formInner}>
@@ -177,6 +204,15 @@ export const SignUpForm = ({ handleBack }) => {
               label="Wallet Address (EOA)"
               type="text"
               name="walletAddress"
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton>
+                      <AccountBalanceWalletIcon onClick={getWalletAddress} />
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
               value={formik.values.walletAddress}
               helperText={
                 (formik.touched.walletAddress && formik.errors.walletAddress) ||
