@@ -86,13 +86,6 @@ const Footer = () => {
       </Grid>
       <Grid item lg={3} md={4} sm={6} xs={12} className={classes.footerSearch}>
         <FooterSearch />
-        <Typography>
-          Powered By{" "}
-          <span>
-            <img className="boaxlogo" src={boaxLogo} alt="" />
-          </span>{" "}
-          Boax.io
-        </Typography>
       </Grid>
     </Grid>
   );

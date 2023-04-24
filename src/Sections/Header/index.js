@@ -85,13 +85,9 @@ const Header = ({
           <Link to="/artist" className={classes.linkWrap}>
             Artists
           </Link>
-          <a
-            className={classes.linkWrap}
-            href="https://www.instagram.com/arts_education_project/"
-            target="_blank"
-          >
-            FSA
-          </a>
+          <Link className={classes.linkWrap} to="/es-projektai">
+            ES projektai
+          </Link>
           <Link to="/about" className={classes.linkWrap}>
             About Us
           </Link>
