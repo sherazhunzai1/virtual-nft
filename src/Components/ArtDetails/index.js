@@ -14,7 +14,6 @@ import { useStyles } from "./styles";
 import ShareModal from "../../Units/ShareModal";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { PROFILE_BASE_URL } from "../../HTTP/config";
 import { useFullscreenStatus } from "../../Utilites";
 
 const ArtDetails = ({
@@ -202,7 +201,7 @@ const ArtDetails = ({
         <div className={classes.gridContainer}>
           <div className={classes.creatorContainer}>
             <Creator
-              profilePic={`${PROFILE_BASE_URL}/${creator_img}`}
+              profilePic={creator_img}
               hasProfilePicture={Boolean(creator_img)}
               fullname={creator_fullName}
               username={creator_username}
@@ -233,7 +232,7 @@ const ArtDetails = ({
                 <History
                   key={i}
                   type={transactionType}
-                  profilePic={`${PROFILE_BASE_URL}/${userImg}`}
+                  profilePic={userImg}
                   username={username}
                   priceEth={transactionAmount}
                   date={date}

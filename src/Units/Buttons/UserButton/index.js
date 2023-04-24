@@ -1,15 +1,10 @@
 import { CardMedia, makeStyles, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import defaultProfilePic from "../../../Assets/PNGs/userimg.jpg";
-import { PROFILE_BASE_URL } from "../../../HTTP/config";
 
 const UserButton = ({ profilePic = "", userName = "" }) => {
   const classes = useStyles();
-  const profileURL = profilePic
-    ? profilePic.includes(PROFILE_BASE_URL)
-      ? profilePic
-      : `${PROFILE_BASE_URL}/${profilePic}`
-    : defaultProfilePic;
+  const profileURL = profilePic ? profilePic : defaultProfilePic;
 
   return (
     <Link to={`/@${userName}`} className={classes.link}>
