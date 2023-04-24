@@ -7,7 +7,6 @@ import { Row, Item } from "@mui-treasury/components/flex";
 
 import defaultProfilePic from "../../Assets/PNGs/userimg.jpg";
 import defaultCoverPic from "../../Assets/PNGs/auctionBack.png";
-import { COVER_PIC_BASE_URL, PROFILE_BASE_URL } from "../../HTTP/config";
 import useStyles from "./styles";
 import { textOverflow } from "../../utils/helper";
 
@@ -21,16 +20,8 @@ const CreatorCard = ({
   const classes = useStyles({ color: "#fff" });
   const mediaStyles = useCoverCardMediaStyles();
 
-  const coverUrl = cover
-    ? cover.includes(COVER_PIC_BASE_URL)
-      ? cover
-      : `${COVER_PIC_BASE_URL}/${cover}`
-    : defaultCoverPic;
-  const profileURL = profile
-    ? profile.includes(PROFILE_BASE_URL)
-      ? profile
-      : `${PROFILE_BASE_URL}/${profile}`
-    : defaultProfilePic;
+  const coverUrl = cover ? cover : defaultCoverPic;
+  const profileURL = profile ? profile : defaultProfilePic;
 
   const history = useHistory();
   const handleNavigation = () => {

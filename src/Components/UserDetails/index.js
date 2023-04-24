@@ -20,11 +20,7 @@ const UserDetails = ({
 }) => {
   const classes = useStyles();
 
-  const profileURL = profilePic
-    ? profilePic.includes(PROFILE_BASE_URL)
-      ? profilePic
-      : `${PROFILE_BASE_URL}/${profilePic}`
-    : defaultProfilePic;
+  const profileURL = profilePic ? profilePic : defaultProfilePic;
   return (
     <>
       <div className={classes.root}>

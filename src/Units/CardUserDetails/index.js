@@ -2,7 +2,6 @@ import React from "react";
 import { useHistory } from "react-router";
 import cn from "classnames";
 import defaultProfilePic from "../../Assets/PNGs/userimg.jpg";
-import { PROFILE_BASE_URL } from "../../HTTP/config";
 import { useStyles } from "./styles";
 
 const CardUserDetails = ({
@@ -13,11 +12,7 @@ const CardUserDetails = ({
 }) => {
   const classes = useStyles();
 
-  const profileURL = profilePic
-    ? profilePic.includes(PROFILE_BASE_URL)
-      ? profilePic
-      : `${PROFILE_BASE_URL}/${profilePic}`
-    : defaultProfilePic;
+  const profileURL = profilePic ? profilePic : defaultProfilePic;
 
   const history = useHistory();
   const handleButtonClick = (e) => {

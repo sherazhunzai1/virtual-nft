@@ -105,11 +105,7 @@ const UserProfile = ({ userArts, user, loggedInUser }) => {
   const hideEditButton =
     Boolean(logginUserId) && Boolean(userId) && logginUserId === userId;
 
-  const coverUrl = cover
-    ? cover.includes(COVER_PIC_BASE_URL)
-      ? cover
-      : `${COVER_PIC_BASE_URL}/${cover}`
-    : defaultCoverPic;
+  const coverUrl = cover ? cover : defaultCoverPic;
 
   const url = window.location.href;
   return (

@@ -172,7 +172,7 @@ const PurschaseNftPage = ({
             </div>
             <div className={classes.creatorContainer}>
               <Creator
-                profilePic={`${PROFILE_BASE_URL}/${creator_img}`}
+                profilePic={creator_img}
                 hasProfilePicture={Boolean(creator_img)}
                 fullname={creator_fullName}
                 username={creator_username}
