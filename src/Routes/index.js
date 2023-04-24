@@ -8,6 +8,7 @@ import {
 import Header from "../Sections/Header";
 import Footer from "../Sections/Footer";
 import { CircularProgress } from "@material-ui/core";
+import ESProjectai from "../Pages/EsProjectai";
 
 const Home = lazy(() => import("../Pages/Home"));
 const Market = lazy(() => import("../Pages/Market"));
@@ -61,6 +62,7 @@ const Routes = ({ children }) => {
             exact
             component={PurschaseNft}
           />
+          <Route path="/es-projektai" exact component={ESProjectai} />
           <Route path="/*/:artParams" exact component={Artwork} />
           <Route path="/*" exact component={Profile} />
         </Switch>
