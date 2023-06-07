@@ -3,7 +3,7 @@ export const termsContent = [
     heading: "Acceptance of T&C",
     para: [
       {
-        p: "Krama Marketplace Is Owned And Operated By Krama Marketplace PTE A Company Registered In Singapore With Its Registered Address Orchard road, Singapore (“Company”, “We”, “Us”, Or “Our”). These Terms And Conditions (“T&C”) Constitute A Legally Binding Agreement Between Company And Each Registered Or Unregistered End User (Each, A “User”, “You” Or “Your”) Of The Krama Marketplace Located At www.Krama.io Or Such Other URL As May Be Designated By Company From Time To Time, As Well As Any Mobile Apps Or Other Related Services Or Applications Thereto (Collectively, The “NFT Marketplace”). Please Read These T&C Carefully. By Accessing And Using The NFT Marketplace (Including By Purchasing Or Bidding On Any Items Herein), You Are Deemed To Have Read, Accepted, Executed And Agreed To Be Bound By These T&C. If You Are Using The NFT Marketplace As A Representative Of An Entity, You Are Agreeing To These Terms On Behalf Of That Entity. We May Change Or Amend The NFT Marketplace Or These T&C At Any Time At Our Sole And Absolute Discretion. Any Changes To These T&C Will Be In Effect As Of The “LAST REVISED” Date Referred To At The Top Of This Page. You Acknowledge And Agree That The Form And Nature Of The NFT Marketplace, And Any Part Of It, May Change From Time To Time Without Prior Notice To You, And That We May Add New Or Remove Existing Features And Change Any Part Of The NFT Marketplace.",
+        p: "Virtual Nft Marketplace Is Owned And Operated By Virtual Nft Marketplace PTE A Company Registered In Singapore With Its Registered Address Orchard road, Singapore (“Company”, “We”, “Us”, Or “Our”). These Terms And Conditions (“T&C”) Constitute A Legally Binding Agreement Between Company And Each Registered Or Unregistered End User (Each, A “User”, “You” Or “Your”) Of The Virtual Nft Marketplace Located At www.Virtual Nft.io Or Such Other URL As May Be Designated By Company From Time To Time, As Well As Any Mobile Apps Or Other Related Services Or Applications Thereto (Collectively, The “NFT Marketplace”). Please Read These T&C Carefully. By Accessing And Using The NFT Marketplace (Including By Purchasing Or Bidding On Any Items Herein), You Are Deemed To Have Read, Accepted, Executed And Agreed To Be Bound By These T&C. If You Are Using The NFT Marketplace As A Representative Of An Entity, You Are Agreeing To These Terms On Behalf Of That Entity. We May Change Or Amend The NFT Marketplace Or These T&C At Any Time At Our Sole And Absolute Discretion. Any Changes To These T&C Will Be In Effect As Of The “LAST REVISED” Date Referred To At The Top Of This Page. You Acknowledge And Agree That The Form And Nature Of The NFT Marketplace, And Any Part Of It, May Change From Time To Time Without Prior Notice To You, And That We May Add New Or Remove Existing Features And Change Any Part Of The NFT Marketplace.",
       },
       {
         p: " IF ANY PROVISION OF THESE T&C OR ANY FUTURE CHANGES ARE UNACCEPTABLE TO YOU, DO NOT USE OR CONTINUE TO USE THE NFT MARKETPLACE. YOUR CONTINUED USE OF THE NFT MARKETPLACE FOLLOWING THE POSTING OF ANY NOTICE OF ANY CHANGE TO THESE TERMS OF SERVICE SHALL CONSTITUTE YOUR ACCEPTANCE AND AGREEMENT TO SUCH CHANGE. YOU AND COMPANY AGREE THAT DISPUTES BETWEEN US WILL BE RESOLVED BY MANDATORY BINDING ARBITRATION, AND YOU AND COMPANY WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS-ACTION LAWSUIT OR CLASS-WIDE ARBITRATION.",
@@ -90,7 +90,7 @@ export const termsContent = [
         p: "And The Physical Or Electronic Signature Of A Person Authorized To Act On Behalf Of The Owner Of The Copyright Or Of An Exclusive Right That Is Allegedly Infringed.",
       },
       {
-        p: "Notices Of Copyright Infringement Claims Should Be Sent By Email To Legal@Krama.io ",
+        p: "Notices Of Copyright Infringement Claims Should Be Sent By Email To Legal@Virtual Nft.io ",
       },
       {
         p: "It Is Our Policy, In Appropriate Circumstances And At Our Discretion, To Disable Or Terminate The Accounts Of Users Who Repeatedly Infringe Copyrights Or Intellectual Property Rights Of Others. Any User Of The NFT Marketplace Who Has Uploaded Or Posted Materials Identified As Infringing As Described Above May Supply A Counter-Notification. When We Receive A Counter-Notification, We May Reinstate The Posts Or Material In Question, In Our Sole Discretion. To File A Counter-Notification With Us, You Must Provide A Written Communication (By Email) That Sets Forth: Your Name, Address, Telephone Number, E-Mail Address And Physical Or Electronic Signature;",
@@ -132,7 +132,7 @@ export const termsContent = [
     heading: "Contact",
     para: [
       {
-        p: "General Questions Or Comments About The NFT Marketplace Or These T&C Should Be Sent By Email To Support@Krama.io  ",
+        p: "General Questions Or Comments About The NFT Marketplace Or These T&C Should Be Sent By Email To Support@Virtual Nft.io  ",
       },
     ],
   },

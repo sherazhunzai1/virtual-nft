@@ -26,7 +26,7 @@ export const aboutContent = [
     para: [
       {
         subHeading: false,
-        text: "Based out of our new gallery at Royal Train Square, and with offices in HK and London; Krama will be assisting the global transition from physical to digital ownership of assets by providing a bridging company. Unique collections will consist of both physical and digital assets and be available on-line via our Krama.io platform and also monthly physical auctions.",
+        text: "Based out of our new gallery at Royal Train Square, and with offices in HK and London; Virtual Nft will be assisting the global transition from physical to digital ownership of assets by providing a bridging company. Unique collections will consist of both physical and digital assets and be available on-line via our Virtual Nft.io platform and also monthly physical auctions.",
       },
     ],
     image: AboutAnimation2,

@@ -1,6 +1,7 @@
 export const blogContent = [
   {
-    heading: "Downloading MetaMask Wallet for Krama And Creating a New Account",
+    heading:
+      "Downloading MetaMask Wallet for Virtual Nft And Creating a New Account",
     para: [
       {
         p: "Step 1: Visit https://metamask.io/download to download MetaMask wallet (make sure you are on the Google Chrome browser, desktop version)",
@@ -18,7 +19,7 @@ export const blogContent = [
         p: "Step 5: After the password is created, MetaMask will provide you with ‘backup phrases’. Please note those down, keep them safe and DO NOT SHARE those phrases with anyone. The next step will require you to put the phrases in the box in chronological order, as shown previously.",
       },
       {
-        p: "Step 6: Your MetaMask account is ready for use. You can now visit https://www.Krama.io and browse freely on the marketplace!",
+        p: "Step 6: Your MetaMask account is ready for use. You can now visit https://www.Virtual Nft.io and browse freely on the marketplace!",
       },
     ],
   },
@@ -60,10 +61,10 @@ export const blogContent = [
     ],
   },
   {
-    heading: "How to Bid and Collect Artwork on Krama",
+    heading: "How to Bid and Collect Artwork on Virtual Nft",
     para: [
       {
-        p: "Step 1: Visit the Krama Marketplace at https://Krama.io/ and select your NFT of choice, in which you will be directed to the NFT artwork page.",
+        p: "Step 1: Visit the Virtual Nft Marketplace at https://Virtual Nft.io/ and select your NFT of choice, in which you will be directed to the NFT artwork page.",
       },
       {
         p: "Step 2: Click ‘bid now’ to start bidding.",
@@ -86,7 +87,7 @@ export const blogContent = [
     ],
   },
   {
-    heading: "Setting up your profile on Krama",
+    heading: "Setting up your profile on Virtual Nft",
     para: [
       {
         p: "Step 1: Log in to your MetaMask wallet account.             ",
@@ -95,7 +96,7 @@ export const blogContent = [
         p: "",
       },
       {
-        p: "Step 2: On the top right corner of Krama.io, click on the icon and then click on “My Profile”.",
+        p: "Step 2: On the top right corner of Virtual Nft.io, click on the icon and then click on “My Profile”.",
       },
       {
         p: "Step 3: Click on “Edit profile”         ",

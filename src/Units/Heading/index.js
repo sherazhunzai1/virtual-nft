@@ -5,7 +5,7 @@ const Head = (props) => {
   return (
     <div className={classes.headRoot}>
       <div className={classes.headInner}>
-        <h2>Krama</h2>
+        <h2>Virtual Nft</h2>
         <div className={classes.dot}></div>
         <h2>{pageName}</h2>
       </div>
