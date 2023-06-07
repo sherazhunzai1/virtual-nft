@@ -83,23 +83,23 @@ export const aboutContent = [
 //       },
 //       {
 //         subHeading: false,
-//         text: "BOAX platform handles all the technical tasks from creating NFT, listing NFT, e-auction to transaction settlement so that our artists can focus on their art creation. ",
+//         text: "Virtual Nft platform handles all the technical tasks from creating NFT, listing NFT, e-auction to transaction settlement so that our artists can focus on their art creation. ",
 //       },
 //       {
 //         subHeading: false,
-//         text: "BOAX platform will identify high-growth digital and physical arts that fit NFT projects for ultra-high and high net-worth investors and collectors. Investors and collectors have complete transparency in price and intellectual property ownership of listed NFTs when put up for auction.",
+//         text: "Virtual Nft platform will identify high-growth digital and physical arts that fit NFT projects for ultra-high and high net-worth investors and collectors. Investors and collectors have complete transparency in price and intellectual property ownership of listed NFTs when put up for auction.",
 //       },
 //       {
 //         subHeading: "Supported by BOA FinTech Ecosystem",
-//         text: "BOAX is part of BOA FinTech Ecosystem and supported by Bank of Asia (BVI), a fully licensed offshore bank headquartered in the British Virgin Islands, which will provide financial solutions to our target audience.",
+//         text: "Virtual Nft is part of BOA FinTech Ecosystem and supported by Bank of Asia (BVI), a fully licensed offshore bank headquartered in the British Virgin Islands, which will provide financial solutions to our target audience.",
 //       },
 //       {
 //         subHeading: "Connecting Artists & Audiences ",
-//         text: "We aim to connect our audience with their favourite artists. BOAX is the best platform for our artists to make a positive impact.",
+//         text: "We aim to connect our audience with their favourite artists. Virtual Nft is the best platform for our artists to make a positive impact.",
 //       },
 //       {
 //         subHeading: "Guaranteed User Experience",
-//         text: "We design our marketplace for easy interaction. We focus on providing the best user experience for all BOAX marketplace visitors, with an emphasis on the security of all transactions.",
+//         text: "We design our marketplace for easy interaction. We focus on providing the best user experience for all Virtual Nft marketplace visitors, with an emphasis on the security of all transactions.",
 //       },
 //     ],
 //     image: AboutImg3,
@@ -125,6 +125,6 @@ export const aboutContent = [
 //   {
 //     quote: `"NFTs are more than just digital artworks. NFTs have transformed the entire crypto game by representing the ownership of digital assets. With technology advancing rapidly, the digital space will be the number one topic of discussion for all generations in the near future. The concept of NFTs is the core to real digital ownership, offering the digital market a whole new prospect for investments, holdings and assets management. "`,
 //     quotee: " Ian Wen",
-//     position: " Founder of BOAX NFT Marketplace    ",
+//     position: " Founder of Virtual Nft NFT Marketplace    ",
 //   },
 // ];
