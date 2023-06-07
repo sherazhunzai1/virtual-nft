@@ -189,9 +189,11 @@ const Mint = (props) => {
           Create NFT function is only open to approved artists at the moment.
           Please contact us for more information at&nbsp;
           <em>
-            <a href="mailto:marketing@krama.io">marketing@krama.io</a>
+            <a href="mailto:marketing@Virtual Nft.io">
+              marketing@Virtual Nft.io
+            </a>
           </em>
-          &nbsp;if you wish to join Krama as an approved artist.
+          &nbsp;if you wish to join Virtual Nft as an approved artist.
         </Typography>
       </div>
     );
@@ -244,10 +246,10 @@ const Mint = (props) => {
                       !isApprovedForAllLoading && (
                         <Typography variant="h6" className={classes.note}>
                           <em>NOTE</em>: You are seeing this message as you need
-                          to approve the Krama Marketplace contract to manage
-                          minted NFTs on your behalf. You will only need to do
-                          this the first time you mint a NFT and it will stay
-                          valid for all future minting, you can revoke this
+                          to approve the Virtual Nft Marketplace contract to
+                          manage minted NFTs on your behalf. You will only need
+                          to do this the first time you mint a NFT and it will
+                          stay valid for all future minting, you can revoke this
                           authorization at anytime. Note that you may have to
                           wait a minute for the authorization to take effect
                           after it has been submitted to the blockchain.
@@ -277,7 +279,7 @@ const Mint = (props) => {
                       fullWidth
                       disabled={!isWalletConnected}
                     >
-                      Approve Krama Marketplace
+                      Approve Virtual Nft Marketplace
                     </Button>
                   )}
 

@@ -14,7 +14,7 @@ const CreatorCard = ({
   cover,
   profile,
   name,
-  username = "krama_user",
+  username = "virtual Nft_user",
   description,
 }) => {
   const classes = useStyles({ color: "#fff" });
@@ -49,12 +49,12 @@ const CreatorCard = ({
           </Row>
           <div>
             <Typography className={classes.title} variant="h5">
-              {name || "krama user"}
+              {name || "virtual Nft user"}
             </Typography>
           </div>
           <div>
             <Typography className={classes.tag} variant="h6">
-              @&nbsp;{username || "krama user"}
+              @&nbsp;{username || "virtual Nft user"}
             </Typography>
           </div>
           <div className={classes.description}>

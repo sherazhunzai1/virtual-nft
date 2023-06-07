@@ -121,7 +121,7 @@ const ConnectWalletModal = ({
                 ) : (
                   <Typography className="message">
                     Please connect to the registered MetaMask wallet when you
-                    created your account with Krama.
+                    created your account with Virtual Nft.
                   </Typography>
                 )}
               </div>

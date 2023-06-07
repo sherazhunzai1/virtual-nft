@@ -22,6 +22,17 @@ const ESProjectai = () => {
           kultūros ir kūrybinio turinio ir formos produktus, paslaugas ar
           veiklos procesus.
         </Typography>
+
+        <Typography variant="body1" className={classes.typography}>
+          Projekto tikslas – Paskatinti labai mažas, mažas ir vidutines (toliau
+          – MVĮ) kultūros ir kūrybinės industrijos (toliau – KKI) įmones kurti
+          naujus, aukštos pridėtinės vertės, konkurencingus kultūros ir
+          kūrybinio turinio ir formos produktus, investuojant į naujus
+          konkurencingo skaitmeninio ir (arba) žiedinę ekonomiką skatinančio
+          kultūros ir kūrybinio turinio ir formos produktus, paslaugas ar
+          veiklos procesus. Finansuojamas iš Europos regioninės plėtros fondo.
+          Finansuojama kaip Sąjungos atsako į COVID-19 pandemiją priemonė.
+        </Typography>
       </Box>
     </Box>
   );

@@ -375,8 +375,8 @@ const NftSaleForm = ({
                         !isApprovedForAllLoading && (
                           <Typography variant="h6" className={classes.note}>
                             <em>NOTE</em>: You are seeing this message as you
-                            need to approve the Krama Marketplace contract to
-                            manage minted NFTs on your behalf. You will only
+                            need to approve the Virtual Nft Marketplace contract
+                            to manage minted NFTs on your behalf. You will only
                             need to do this the first time you mint a NFT and it
                             will stay valid for all future minting, you can
                             revoke this authorization at anytime. Note that you
@@ -404,7 +404,7 @@ const NftSaleForm = ({
                           onClick={handleSetApprovedForAll}
                           fullWidth
                         >
-                          Approve Krama Marketplace
+                          Approve Virtual Nft Marketplace
                         </Button>
                       )}
 
