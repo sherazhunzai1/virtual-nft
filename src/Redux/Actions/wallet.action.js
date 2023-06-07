@@ -17,7 +17,9 @@ export const connectWallet = createAsyncThunk(
       const addresses = await web3.eth.requestAccounts();
       const address = addresses[0];
       await web3.eth.personal.sign(
-        web3.utils.fromUtf8("Please sign this message to connect to Boax."),
+        web3.utils.fromUtf8(
+          "Please sign this message to connect to Virtual Nft."
+        ),
         address
       );
 
