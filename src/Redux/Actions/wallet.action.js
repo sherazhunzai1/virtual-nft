@@ -23,7 +23,7 @@ export const connectWallet = createAsyncThunk(
         address
       );
 
-      await checkUserWalletConnection(address, userId);
+      // await checkUserWalletConnection(address, userId);
 
       dispatch(getWalletBalance({ web3, walletAddress: address }));
 
@@ -51,7 +51,7 @@ export const getWalletAccounts = createAsyncThunk(
       const addresses = await web3.eth.getAccounts();
       const address = addresses[0];
 
-      await checkUserWalletConnection(address, userId);
+      // await checkUserWalletConnection(address, userId);
 
       dispatch(getWalletBalance({ web3, walletAddress: address }));
 
