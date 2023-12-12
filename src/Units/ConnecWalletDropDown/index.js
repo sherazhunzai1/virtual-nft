@@ -14,7 +14,8 @@ import Fade from "@material-ui/core/Fade";
 import { connectWallet } from "../../Redux/Actions/wallet.action";
 import { changeChain } from "../../Redux/Actions/web3.actions";
 import { useStyles } from "./styles";
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
+import { getLoggedIn } from "../../Redux/Actions/auth.actions";
 
 const ConnectWalletModal = ({
   open = false,
@@ -34,20 +35,26 @@ const ConnectWalletModal = ({
   changeChain,
 }) => {
   const classes = useStyles();
-
-  const handleConnectWallet = () => {
-    web3 &&
-      String(networkName).toLocaleLowerCase() ===
-        String(validNetworkName).toLocaleLowerCase() &&
+  const dispatch = useDispatch()
+  const handleConnectWallet = async () => {
+    if (web3 && String(networkName).toLocaleLowerCase() === String(validNetworkName).toLocaleLowerCase()) {
       connectWallet({ web3 });
+
+    }
   };
   const handleRegisterButtonClick = () => {
     handleRegisterModalOpen();
     handleCloseModal();
   };
   useEffect(() => {
-    if (isWalletConnected) handleCloseModal();
-  }, [isWalletConnected, handleCloseModal]);
+    if (isWalletConnected) {
+      // const payload = new FormData();
+      // payload.append("wallet", "0x10a521997bcC3090D8511dA685B3aB6f1255E7f3");
+      // dispatch(getLoggedIn(payload));
+      handleCloseModal();
+    }
+  }, [isWalletConnected, handleCloseModal, dispatch]);
+  
   return (
     <div className={classes.root}>
       <Modal
