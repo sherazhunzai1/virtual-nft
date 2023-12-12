@@ -57,7 +57,7 @@ export const getLoggedInFromApi = async (payload) => {
 
 export const checkUserSession = async (payload) => {
   let fd = new FormData();
-  fd.append("Authorization", payload);
+  fd.append("wallet", payload);
   const res = await KramaClient.post("/api/Creators/check_session.php", fd);
   return res;
 };

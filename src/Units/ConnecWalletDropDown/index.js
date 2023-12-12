@@ -66,71 +66,50 @@ const ConnectWalletModal = ({
                 <CancelIcon />
               </IconButton>
             </div>
-            {!isSignInSuccess ? (
-              <div style={{ padding: 20 }}>
-                <Typography className="message">
-                  Please Login first to connect your wallet.
-                </Typography>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    paddingTop: 20,
-                  }}
-                >
-                  <button
-                    onClick={handleRegisterButtonClick}
-                    className={classes.connectWalletButton}
-                  >
-                    Register/Login
-                  </button>
-                </div>
-              </div>
-            ) : String(networkName).toLocaleLowerCase() !==
-              String(validNetworkName).toLocaleLowerCase() ? (
-              <div className={classes.messageContainer}>
-                <Typography className="message" style={{ marginTop: 24 }}>
-                  . Please Change Network To {validNetworkName}
-                  &nbsp; from MetaMask.
-                </Typography>
+            {String(networkName).toLocaleLowerCase() !== String(validNetworkName).toLocaleLowerCase() ? (
+  <div className={classes.messageContainer}>
+    <Typography className="message" style={{ marginTop: 24 }}>
+      Please Change Network To {validNetworkName} from MetaMask.
+    </Typography>
 
-                <button
-                  onClick={() => changeChain()}
-                  className={classes.connectWalletButton}
-                >
-                  Switch Network
-                </button>
-              </div>
-            ) : isWalletConnecting || isWalletConnected ? (
-              <div className={classes.messageContainer}>
-                <Typography className="message">
-                  {isWalletConnected
-                    ? "Your Wallet is already connected"
-                    : " Please Sign the Message to verify your account."}
-                </Typography>
-                {!isWalletConnected && (
-                  <CircularProgress size={35} variant="indeterminate" />
-                )}
-              </div>
-            ) : isWalletConnectingFailed ? (
-              <div className={classes.messageContainer}>
-                {!window.ethereum ? (
-                  <Typography className="message">
-                    No Web3 Provider Found. You cannot connect wallet.
-                  </Typography>
-                ) : (
-                  <Typography className="message">
-                    Please connect to the registered MetaMask wallet when you
-                    created your account with Virtual Nft.
-                  </Typography>
-                )}
-              </div>
-            ) : (
-              <ConnectWalletModalInner
-                handleCloseModal={handleCloseModal}
-                handleConnectWallet={handleConnectWallet}
-              />
-            )}
+    <button
+      onClick={() => changeChain()}
+      className={classes.connectWalletButton}
+    >
+      Switch Network
+    </button>
+  </div>
+) : isWalletConnecting || isWalletConnected ? (
+  <div className={classes.messageContainer}>
+    <Typography className="message">
+      {isWalletConnected
+        ? "Your Wallet is already connected"
+        : " Please Sign the Message to verify your account."}
+    </Typography>
+    {!isWalletConnected && (
+      <CircularProgress size={35} variant="indeterminate" />
+    )}
+  </div>
+) : isWalletConnectingFailed ? (
+  <div className={classes.messageContainer}>
+    {!window.ethereum ? (
+      <Typography className="message">
+        No Web3 Provider Found. You cannot connect the wallet.
+      </Typography>
+    ) : (
+      <Typography className="message">
+        Please connect to your MetaMask wallet.
+      </Typography>
+    )}
+  </div>
+) : (
+  <ConnectWalletModalInner
+    handleCloseModal={handleCloseModal}
+    handleConnectWallet={handleConnectWallet}
+  />
+)}
+
+
           </Paper>
         </Fade>
       </Modal>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grid, Typography } from "@material-ui/core";
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import cn from "classnames";
 import AuthenticationModal from "../../Components/AuthenticationModal";
@@ -13,9 +13,11 @@ import CreateNft from "../../Units/CreateNft";
 
 import { useStyles } from "./styles";
 import Logo from "../../Assets/PNGs/logo.png";
+import { disconnectWallet } from "../../Redux/Actions/wallet.action";
 
 const Header = ({
   isWalletConnected,
+  walletAddress,
   user: { username, img: userProfilePic },
   isSignInSuccess,
 
@@ -25,9 +27,10 @@ const Header = ({
   const classes = useStyles();
   const [openMintModal, setOpenMintModal] = React.useState(false);
   const [isWalletModalOpen, setIsWalletModalOpen] = React.useState(false);
-
+  const dispatch = useDispatch()
   const handleWalletModalOpen = () => {
     setIsWalletModalOpen(true);
+    
   };
   const handleWalletModalClose = () => {
     setIsWalletModalOpen(false);
@@ -43,7 +46,13 @@ const Header = ({
   const handleMintModalClose = () => {
     setIsMintModalOpen(false);
   };
-
+  const handleWallet = () => {
+    if(isWalletConnected){
+      dispatch(disconnectWallet())
+    }else{
+      setIsWalletModalOpen(true);
+    }
+  }
   const history = useHistory();
   const handleMintModalOpen = () => {
     if (
@@ -68,7 +77,6 @@ const Header = ({
           </div>
           <div className={classes.mobMenu}>
             <MobileMenu
-              isAuth={isSignInSuccess}
               setIsRegisterModalOpen={setIsRegisterModalOpen}
               userImg={userProfilePic}
               username={username}
@@ -104,10 +112,10 @@ const Header = ({
           md={12}
           sm={12}
           xs={12}
-          justifyContent={isSignInSuccess ? "flex-end" : "space-around"}
+          justifyContent={isWalletConnected ? "flex-end" : "space-around"}
           className={classes.btnCont}
         >
-          {!isSignInSuccess ? (
+          {!walletAddress ? (
             <React.Fragment>
               <div
                 onClick={handleRegisterModalOpen}
@@ -128,7 +136,7 @@ const Header = ({
                 sm
                 title="Connect Wallet"
                 className={classes.navButton}
-                onClick={handleWalletModalOpen}
+                onClick={handleWallet}
               />
               <AuthenticationModal
                 isRegisterModalOpen={isRegisterModalOpen}
@@ -170,7 +178,7 @@ const Header = ({
 
       <ConnectWalletModal
         open={isWalletModalOpen}
-        isSignInSuccess={isSignInSuccess}
+        isWalletConnected={isWalletConnected}
         handleCloseModal={handleWalletModalClose}
         handleRegisterModalOpen={handleRegisterModalOpen}
       />
