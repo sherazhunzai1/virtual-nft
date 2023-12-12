@@ -44,7 +44,7 @@ export const clearSigninState = createAction("Auth/clearErrorMessage");
 export const checkUserSessionAction = createAsyncThunk(
   "Auth/checkUserSession",
   async () => {
-    const token = localStorage.getItem("boaxnftusertoken");
+    const token = sessionStorage.getItem("boaxnftusertoken");
     const res = await checkUserSession(token);
     if (res.status === 204) throw new Error("Session is not valid");
     return { user: res.data };

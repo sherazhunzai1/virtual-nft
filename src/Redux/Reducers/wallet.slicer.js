@@ -25,7 +25,7 @@ const initialState = {
 };
 
 const authSuccess = (state, action) => {
-  localStorage.setItem("boaxnftusertoken", action.payload?.walletAddress);
+  sessionStorage.setItem("boaxnftusertoken", action.payload?.walletAddress);
   state.isWalletConnecting = false;
   state.isWalletConnected = true;
   state.walletAddress = action.payload.walletAddress;
@@ -109,7 +109,7 @@ const walletSlicer = createSlice({
       state.isWalletConnectingFailed = false;
      
       state.walletAddress = null;
-      localStorage.clear();
+      sessionStorage.clear();
     },
   },
 });
