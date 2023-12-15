@@ -6,10 +6,10 @@ const initialState = {
   isContractInitialized: false,
   isContractInitializedFailed: false,
 
-  nftContractadAddress: "0x2328356677151335A18E3CeA6fD74D43b350f783",
+  nftContractadAddress: "0x9C0722eC3Da336d8793d84904577eb929762691a",
   nftContract: null,
 
-  marketContractAddress: "0x699BBd3A1299EEecFFbF59CE822cDd77a722732b",
+  marketContractAddress: "0xD7D6236Ba52198c4f4a3C361cD718704Ad44b4B5",
   marketContract: null,
 };
 
